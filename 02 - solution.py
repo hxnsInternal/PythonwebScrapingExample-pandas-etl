@@ -24,11 +24,12 @@ def rename_json(jsInput, dictMapColumns):
 
     try:
         for oldColumn, newColumn in dictMapColumns.items(): 
-            jsInput[newColumn] = jsInput.pop(oldColumn)  
-        return jsInput
+            jsInput[newColumn] = jsInput.pop(oldColumn)          
     except Exception as e:
         print(str(e))
         raise e
+    else:
+        return jsInput
 
 #getting html content from URL
 def get_html_content(urlSession):    
