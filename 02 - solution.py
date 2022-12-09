@@ -190,7 +190,7 @@ def main():
     #creating dataframe using pandasql
     tbl_user = ps.sqldf(lsSql)
 
-    #restarting dataframe index to be use as a Unique ID (Primary Key) for table User
+    #restarting dataframe index to be use as an Unique ID (Primary Key) for table User
     tbl_user.index = tbl_user.index + 1
     tbl_user = tbl_user.rename_axis('user_id').reset_index()
 
@@ -213,7 +213,7 @@ def main():
     """
     tbl_currency = ps.sqldf(lsSql)   
 
-    #restarting dataframe index to be use as a Unique ID (Primary Key) for table currency
+    #restarting dataframe index to be use as an Unique ID (Primary Key) for table currency
     tbl_currency.index = tbl_currency.index + 1
     tbl_currency = tbl_currency.rename_axis('currency_id').reset_index()
 
@@ -234,7 +234,7 @@ def main():
     """
     tbl_location = ps.sqldf(lsSql)
     
-    #restarting dataframe index to be use as a Unique ID (Primary Key) for table currency
+    #restarting dataframe index to be use as an Unique ID (Primary Key) for table currency
     tbl_location.index = tbl_location.index + 1
     tbl_location = tbl_location.rename_axis('location_id').reset_index()
     
